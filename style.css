@@ -1,0 +1,80 @@
+.grading-wrap {
+  text-align: center;
+  background-color: aqua;
+  padding: 45px 0 65px 0;
+  width: 70%;
+  margin: 0 auto;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: currentColor;
+  justify-content: center;
+}
+.grading-wrap h3 {
+  font-size: 35px;
+  text-transform: uppercase;
+  text-shadow: 4px 4px #ccc;
+  color: maroon;
+  font-weight: bold;
+}
+.grading-wrap form table {
+  margin: 0 auto;
+  width: 80%;
+}
+.grading-wrap form table tr td {
+  padding: 15px;
+}
+.grading-wrap form input[type='text'] {
+  background-color: transparent;
+  border: 0;
+  width: 100%;
+}
+
+input[type='submit'],
+input[type='reset'] {
+  background: linear-gradient(45deg, black, transparent);
+  border: 0;
+  padding: 10px 24px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+input[type='submit']:focus,
+input[type='reset']:focus {
+  outline: 0;
+}
+.grading-wrap form input[type='text']:focus {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+}
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  background: transparent;
+  -webkit-text-fill-color: darkblue;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+  font-weight: bold;
+}
+
+#result {
+  color: #fff;
+  background: maroon;
+  width: 60%;
+  margin: 20px auto 0px auto;
+  padding: 20px;
+  opacity: 0;
+}

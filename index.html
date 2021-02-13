@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading check</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <p id="demo">hello</p>
+    <div class="grading-wrap">
+        <h3>Grading Form</h3>
+        <form action="" id="newForm" method="GET" name="grading">
+            <table border="1" style="border-collapse: collapse;cellpadding:15">
+                <tr>
+                    <td><span>Student Name:</span></td>
+                    <td><input type="text" name="name" ></td>
+                </tr>
+                <tr>
+                    <td><span>Marks for physics:</span></td>
+                    <td><input type="text" class="length" name="physics" ></td>
+                </tr>
+                <tr>
+                    <td><span>Marks for Chemistry:</span></td>
+                    <td><input type="text" class="length" name="chemistry" ></td>
+                </tr>
+                <tr>
+                    <td><span>Marks for Math:</span></td>
+                    <td><input type="text" class="length" name="math" ></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="submit" >
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <div id="show">
+            <p id="result"></p>
+        </div>
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
