@@ -23,19 +23,22 @@ newForm.addEventListener('submit', function (event) {
 
     if (physics < 33 || chem < 33 || math_M < 33) {
       if(physics<33){
-        result.style.opacity = '1';
-        result.style.transition = 'all 0.3s ease-in-out';
-        result.innerHTML = `${studentName} failed in physics`;
+      	
+      	result.style.opacity = '1';
+      	result.style.transition = 'all 0.3s ease-in-out'
+        result.innerHTML += `${studentName} failed in physics <br>`;
       }
       if(chem<33){
+      	
         result.style.opacity = '1';
-        result.style.transition = 'all 0.3s ease-in-out';
-        result.innerHTML = `${studentName} failed in chemistry`;
+      	result.style.transition = 'all 0.3s ease-in-out'
+        result.innerHTML += `<br>${studentName} failed in chemistry`;
       }
       if(math_M<33){
+      	
         result.style.opacity = '1';
-        result.style.transition = 'all 0.3s ease-in-out';
-        result.innerHTML = `${studentName} failed in mathematics`;
+      	result.style.transition = 'all 0.3s ease-in-out'
+        result.innerHTML += `<br>${studentName} failed in mathematics`;
       }
       
 
