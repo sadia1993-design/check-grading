@@ -22,18 +22,32 @@ newForm.addEventListener('submit', function (event) {
     let averageNumber = wholeTotal / 3;
 
     if (physics < 33 || chem < 33 || math_M < 33) {
-      result.style.opacity = '1';
-      result.style.transition = 'all 0.3s ease-in-out';
+      if(physics<33){
+        result.style.opacity = '1';
+        result.style.transition = 'all 0.3s ease-in-out';
+        result.innerHTML = `${studentName} failed in physics`;
+      }
+      if(chem<33){
+        result.style.opacity = '1';
+        result.style.transition = 'all 0.3s ease-in-out';
+        result.innerHTML = `${studentName} failed in chemistry`;
+      }
+      if(math_M<33){
+        result.style.opacity = '1';
+        result.style.transition = 'all 0.3s ease-in-out';
+        result.innerHTML = `${studentName} failed in mathematics`;
+      }
+      
 
-      let stringNumber = `${physics},${chem},${math_M}`;
-      let arrayNumber = stringNumber.split(',');
+//       let stringNumber = `${physics},${chem},${math_M}`;
+//       let arrayNumber = stringNumber.split(',');
 
-      for (var i in arrayNumber) {
-        if (arrayNumber[i] < 33) {
+//       for (var i in arrayNumber) {
+//         if (arrayNumber[i] < 33) {
           // let add = Object.keys(arrayNumber).map((key) => [Number(key), arrayNumber[key]]);
           // console.log(add);
-        }
-      }
+//         }
+//       }
     }
 
     //DETERMINE GRADES
