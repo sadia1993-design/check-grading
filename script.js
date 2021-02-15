@@ -126,26 +126,27 @@ newForm.addEventListener('submit', function (event) {
 
           }, 3000);
           break;
-
-
       }
-    }
-  }
 
-
-      userList.innerHTML = `${studentName},<br> Physics= ${physics}<br> chemistry= ${chem}<br> mathematics= ${math_M}<br>  ${result.innerHTML}`;
-	  userList.style.display = "block";
-	  userList.style.transition = "all .3s ease-in-out";
-
-	   if (typeof userList === 'object') { 
+      if (typeof userList === 'object') { 
                 studentName = '';
                 Physics = '';
                 chem = '';
                 math_M = ''; 
 
+	     }  
+	  userList.innerHTML = `${studentName},<br> Physics= ${physics}<br> chemistry= ${chem}<br> mathematics= ${math_M}<br>  ${result.innerHTML}`;
+	  userList.style.display = "block";
+	  userList.style.transition = "all .3s ease-in-out";	     
+      setTimeout(function() { userList.remove(); }, 3000);
 
-              setTimeout(function() { userList.remove(); }, 3000);
-            } 
+
+    }
+  }
+
+
+      
+          
          
 	  
       
