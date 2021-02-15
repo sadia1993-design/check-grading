@@ -78,3 +78,16 @@ select:-webkit-autofill:focus {
   padding: 20px;
   opacity: 0;
 }
+div#users {
+    list-style: none;
+    width: 69%;
+    margin: 80px auto;
+    background: darkslategray;
+    color: #fff;
+    padding: 30px 20px;
+    letter-spacing: 3px;
+    border-radius: 6px 84px 6px;
+    display: none;
+    transition: all .3s ease-in-out;
+    text-shadow: 1px 3px black;
+}
